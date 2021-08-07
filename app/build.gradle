@@ -29,6 +29,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures{
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -39,4 +43,5 @@ dependencies {
     testImplementation "$t_junit"
     androidTestImplementation "$at_junit"
     androidTestImplementation "$at_espresso"
+    implementation project(':materialsheetlib')
 }

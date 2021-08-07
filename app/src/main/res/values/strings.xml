@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MaterialSheetExample</string>
+    <string name="confirmation_history_clearance">Clear History</string>
+    <string name="success_clear_history">Data Clear Successfully</string>
+    <string name="show_bottom_sheet_dialog">Show Bottom Sheet Dialog</string>
+    <string name="cancelled">Cancelled</string>
 </resources>

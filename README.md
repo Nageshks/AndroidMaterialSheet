@@ -1,6 +1,6 @@
 AndroidMaterialSheet
 ---------------------
-Avoid biolerplate code to create and show bottom sheet and receive event with fragment result api
+Avoid boilerplate code to create and show bottom sheet and receive event with fragment result api
 
 Download
 --------
