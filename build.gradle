@@ -3,7 +3,6 @@ buildscript {
         // gradle plugin version
         v_gradle_build = '7.0.0'
         v_kotlin_plugin = '1.5.21'
-        v_doka = '1.4.10.2'
 
         // library plugin version
         v_core_ktx = '1.6.0'
@@ -27,6 +26,7 @@ buildscript {
     }
 
     repositories {
+        maven { url "https://plugins.gradle.org/m2/" }
         google()
         mavenCentral()
     }
@@ -34,7 +34,6 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:$v_gradle_build"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$v_kotlin_plugin"
-        classpath "org.jetbrains.dokka:dokka-gradle-plugin:$v_doka"
     }
 
 }
