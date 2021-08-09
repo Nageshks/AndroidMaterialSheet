@@ -36,31 +36,35 @@ afterEvaluate {
 
                 pom {
                     name = PUBLISH_ARTIFACT_ID
-                    description = 'Reduce Boilerplate to create bottom sheet dialog for common use cases'
-                    url = 'https://github.com/Nageshks/AndroidMaterialSheet'
+                    description = PUBLISH_DESCRIPTION
+                    url = PUBLISH_URL
                     licenses {
                         license {
-                            name = 'The Apache Software License, Version 2.0'
-                            url = 'https://www.apache.org/licenses/LICENSE-2.0.txt'
+                            name = PUBLISH_LICENSE_NAME
+                            url = PUBLISH_LICENSE_URL
                         }
                     }
                     developers {
                         developer {
-                            id = 'nageshempire'
-                            name = 'Nagesh Empire'
-                            email = 'nageshempire@gmail.com'
+                            id = PUBLISH_DEVELOPER_ID
+                            name = PUBLISH_DEVELOPER_NAME
+                            email = PUBLISH_DEVELOPER_EMAIL
                         }
                     }
                     scm {
-                        connection = 'scm:git@github.com:Nageshks/AndroidMaterialSheet.git'
-                        developerConnection = 'scm:git@github.com:Nageshks/AndroidMaterialSheet.git'
-                        url = 'https://github.com/Nageshks/AndroidMaterialSheet'
+                        connection = PUBLISH_SCM_CONNECTION
+                        developerConnection = PUBLISH_SCM_DEVELOPER_CONNECTION
+                        url = PUBLISH_SCM_URL
                     }
                 }
             }
         }
     }
 }
+
+ext["signing.keyId"] = rootProject.ext["signing.keyId"]
+ext["signing.password"] = rootProject.ext["signing.password"]
+ext["signing.secretKeyRingFile"] = rootProject.ext["signing.secretKeyRingFile"]
 
 signing {
     sign publishing.publications

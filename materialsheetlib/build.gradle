@@ -4,8 +4,18 @@ plugins {
 }
 ext {
     PUBLISH_GROUP_ID = 'io.github.nageshks.materialsheet'
-    PUBLISH_VERSION = '0.10-SNAPSHOT'
     PUBLISH_ARTIFACT_ID = 'materialsheet'
+    PUBLISH_VERSION = '0.10-SNAPSHOT'
+    PUBLISH_DESCRIPTION = 'Reduce Boilerplate to create bottom sheet dialog for common use cases'
+    PUBLISH_URL = 'https://github.com/Nageshks/AndroidMaterialSheet'
+    PUBLISH_LICENSE_NAME = 'The Apache Software License, Version 2.0'
+    PUBLISH_LICENSE_URL = 'https://www.apache.org/licenses/LICENSE-2.0.txt'
+    PUBLISH_DEVELOPER_ID = 'nageshempire'
+    PUBLISH_DEVELOPER_NAME = 'Nagesh Empire'
+    PUBLISH_DEVELOPER_EMAIL = 'nageshempire@gmail.com'
+    PUBLISH_SCM_CONNECTION = 'scm:git:github.com/Nageshks/AndroidMaterialSheet.git'
+    PUBLISH_SCM_DEVELOPER_CONNECTION = 'scm:git:ssh://github.com/Nageshks/AndroidMaterialSheet.git'
+    PUBLISH_SCM_URL = 'https://github.com/Nageshks/AndroidMaterialSheet/tree/master'
 }
 apply from: "${rootProject.projectDir}/scripts/publish-module.gradle"
 android {
