@@ -7,5 +7,5 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "MaterialSheetExample"
-include ':app'
-include ':materialsheetlib'
+include ':sample'
+include ':library'
