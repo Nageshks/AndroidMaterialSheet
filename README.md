@@ -7,7 +7,6 @@ Avoid boilerplate code to create and show bottom sheet and receive event with fr
 Usage
 -------
 ####  Confirmation Sheet
-<img src="https://github.com/Nageshks/AndroidMaterialSheet/blob/main/confirmation_sheet_sample.jpg" width="200" height="300" align="right">
 
 ```kotlin
 val dialog = ConfirmationSheet.create("CLEAR_HISTORY_REQUEST_KEY","Clear History")
@@ -20,12 +19,13 @@ showDialog(dialog)
 - [x] Pass extra data to handle instantly when result received
 - [x] Currently support only single design as below
 
+<img src="https://github.com/Nageshks/AndroidMaterialSheet/blob/main/confirmation_sheet_sample.jpg" width="200" height="300" align="center">
 
 Download
 --------
 
 ```groovy
-implementation("io.github.nageshks.materialsheet:materialsheet:0.1")
+implementation("io.github.nageshks.materialsheet:materialsheet:0.1.1")
 ```
 
 License
